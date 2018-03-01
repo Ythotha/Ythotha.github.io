@@ -4,7 +4,6 @@
 }
 body{
     min-height: 100%;
-
     font: 81.25% Arial,Helvetica,sans-serif;
     margin: 0;
 }
@@ -134,7 +133,9 @@ ul{
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
+.search-area__header-nav:last-child{
+    margin-right: 0;
+}
 .header-nav__link{
     color: #0054b9;
 }
@@ -205,7 +206,6 @@ ul{
 
 .search__browser-ad{
     float: right;
-    /*padding-right: 40px;*/
     margin-right: 40px;
 }
 .browser-ad__img{
@@ -259,10 +259,6 @@ ul{
 .widget-value__link{
     font-size: 138.5%;
     margin-left: 32px;
-    /*padding-left: 32px;
-    background-image: url("../rain_cloud.svg");
-    background-size: contain;
-    background-position: 0% 50%;*/
 }
 .tv-stream__btn{
     cursor: pointer;
@@ -287,11 +283,13 @@ ul{
     color: inherit;
 }
 .widget__list-item{
+    margin-right: 13px;
     margin-bottom: 10px;
     color: inherit;
 }
 .widget__list-item:last-child{
     margin-bottom: 0;
+    margin-right: 0;
 }
 .list-item_link-bold{
     font-weight: 700;
@@ -302,7 +300,6 @@ ul{
 .list-inline{
     display: inline-block;
     vertical-align: top;
-    margin-right: 13px;
 }
 .list-item__link-bold{
     font-weight: 700;
@@ -317,11 +314,6 @@ ul{
     color: gray;
     padding-top: 32px;
     padding-bottom: 39px;
-    /*position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);*/
-
 }
 .footer-content{
     position: relative;
@@ -353,9 +345,8 @@ ul{
 .footer__text{
     color: inherit;
 }
-
 .logo{
     position: absolute;
-    left: -140px;
+    left: -126px;
     top: -7px;
 }
