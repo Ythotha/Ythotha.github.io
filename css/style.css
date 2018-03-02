@@ -286,8 +286,13 @@ ul{
     height: 32px;
 }
 .widget-value__link{
+    display: inline-block;
+    height: 32px;
     font-size: 138.5%;
-    margin-left: 35px;
+    line-height: 32px;
+    padding-left: 35px;
+    background: url("../img/rain_cloud.svg") 0% 50% no-repeat;
+    background-size: contain;
 }
 .tv-stream__btn{
     cursor: pointer;
@@ -304,6 +309,14 @@ ul{
 .tv-stream__btn:hover{
     transform: scale(1);
     transition: transform .15s ease-out;
+}
+.tv-stream__play-icon{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    width: 8px;
+    height: 14px;
+    background: url("../img/tv-online.webp") 50% 50% no-repeat;
 }
 .widget__list{
     list-style-type: none;

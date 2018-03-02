@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="main-container">
+	<main class="main-container">
 		<header class="header">
 			<div class="header__column">
 				<div class="news">
@@ -26,19 +26,19 @@
 					<div class="news__content">
 						<ul class="news__list">
 							<li class="news__list-item">
-								<a class="" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
+								<a class="news__text" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
 							</li>
 							<li class="news__list-item">
-								<a class="" href="#">Чешский премьер раскритиковал слова Земана о Крыме</a>
+								<a class="news__text" href="#">Чешский премьер раскритиковал слова Земана о Крыме</a>
 							</li>
 							<li class="news__list-item">
-								<a class="" href="#">Трамп прокомментировал слова о возможности третьей мировой войны</a>
+								<a class="news__text" href="#">Трамп прокомментировал слова о возможности третьей мировой войны</a>
 							</li>
 							<li class="news__list-item">
-								<a class="" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
+								<a class="news__text" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
 							</li>
 							<li class="news__list-item">
-								<a class="" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
+								<a class="news__text" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
 							</li>
 						</ul>
 					</div>
@@ -60,7 +60,7 @@
 						<span class="courses__change">+1,58%</span>
 					</div>
 					<div class="courses__item">
-						<a class="courses__more" href="#" title="ещё"><img src="img/dots.svg"></a>
+						<a class="courses__more" href="#" title="ещё"><img src="img/dots.svg" alt="ещё"></a>
 					</div>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 			</div>
 		</header>
 		<div class="search-area">
-			<div class="logo"><a href="#"><img src="img/logo.svg"></a></div>
+			<div class="logo"><a href="#"><img src="img/logo.svg" alt="Яндекс"></a></div>
 			<div class="search-area__header">
 				<h3 class="search-area__header-nav">
 					<a class="header-nav__link" href="#">Карты</a>
@@ -107,11 +107,11 @@
 				</h3>
 			</div>
 			<div class="search">
-				<form>
+				<form action="" method="get" class="search__form">
 					<div class="input-box">
 						<label for="search-field" class="input-label-hidden">Поле для поискового запроса</label>
-						<input id="search-field" class="input-box__input" name="Поисковой запрос" type="text">
-						<button class="keyboard-btn"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
+						<input id="search-field" class="input-box__input" name="yandex-search" type="search">
+						<button class="keyboard-btn" type="button"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
 					</div><button class="search-btn" type="submit">Найти</button>
 				</form>
 				<div class="input-box__misc">
@@ -138,18 +138,18 @@
 							<a class="widget__title-link" href="#">Погода</a>
 						</h2>
 						<div class="widget-value">
-							<a href="#">
+							<!--<a href="#">
 								<img class="widget-value__icon" src="img/rain_cloud.svg" alt="погода - облачно, дождь">
-							</a>
+							</a>-->
 							<a class="widget-value__link" href="#">
-								<span>+8 °C</span>
+								<span class="widget-value__text">+8 °C</span>
 							</a>
 						</div>
 					</div>
 					<ul class="widget__list">
 						<li class="widget__list-item">
-							<a href="#">утро +8 °C</a><span>, </span>
-							<a href="#">день +10 °C</a>
+							<a class="widget__text" href="#">утро +8 °C</a><span>, </span>
+							<a class="widget__text" href="#">день +10 °C</a>
 						</li>
 					</ul>
 				</div>
@@ -163,32 +163,32 @@
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Авто.ру</a>
 							<span> — </span>
-							<a class="" href="#">внедорожники до 300000</a>
+							<a class="widget__text" href="#">внедорожники до 300000</a>
 						</li>
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Недвижимость</a>
 							<span> — </span>
-							<a class="" href="#">ЖК Бунинские Луга</a>
+							<a class="widget__text" href="#">ЖК Бунинские Луга</a>
 						</li>
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Работа</a>
 							<span> — </span>
-							<a class="" href="#">охранником</a>
+							<a class="widget__text" href="#">охранником</a>
 						</li>
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Картинки</a>
 							<span> — </span>
-							<a class="" href="#">Pino</a>
+							<a class="widget__text" href="#">Pino</a>
 						</li>
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Коллекции</a>
 							<span> — </span>
-							<a class="" href="#">интерьер гостинной</a>
+							<a class="widget__text" href="#">интерьер гостинной</a>
 						</li>
 						<li class="widget__list-item">
 							<a class="list-item__link-bold" href="#">Картинки</a>
 							<span> — </span>
-							<a class="" href="#">времена года</a>
+							<a class="widget__text" href="#">времена года</a>
 						</li>
 					</ul>
 				</div>
@@ -224,7 +224,10 @@
 							<a class="widget__title-link" href="#">Телепрограмма</a>
 						</h2>
 						<div class="widget-value">
-							<button class="tv-stream__btn">ТВ онлайн</button>
+							<button class="tv-stream__btn" type="button">
+								ТВ онлайн
+								<div class="tv-stream__play-icon"></div>
+							</button>
 						</div>
 					</div>
 					<ul class="widget__list">
@@ -305,7 +308,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 	<footer class="footer">
 		<div class="footer-content">
 			<div class="footer__column">
@@ -370,7 +373,7 @@
 				</ul>
 			</div>
 			<div class="footer__column">
-				<img class="footer__logo" src="img/TlBivfArOIPRgd4FBZtpO7kAo.svg">
+				<img class="footer__logo" src="img/TlBivfArOIPRgd4FBZtpO7kAo.svg" alt="Яндекс">
 			</div>
 		</div>
 	</footer>
