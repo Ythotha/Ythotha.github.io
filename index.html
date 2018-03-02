@@ -19,7 +19,7 @@
 								<a class="news__tab-link" href="#">в Пензе</a>
 							</h2>
 						</div>
-						<span class="news__date"> 13.10.2017, пятница
+						<span class="news__date"> 2 марта, пятница
 							<a class="news__time" href="#"> 15:58 </a>
 						</span>
 					</div>
@@ -47,10 +47,12 @@
 					<div class="courses__item">
 						<a class="courses__item-link" href="#">USD ЦБ</a>
 						<span class="courses__value">58.07</span>
+						<span class="courses__change">+0.06</span>
 					</div>
 					<div class="courses__item">
 						<a class="courses__item-link" href="#">EUR ЦБ</a>
 						<span class="courses__value">68.36</span>
+						<span class="courses__change">-0.03</span>
 					</div>
 					<div class="courses__item">
 						<a class="courses__item-link" href="#">НЕФТЬ</a>
@@ -62,15 +64,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__column fr-block">
-				<div class="ad">
+			<div class="header__column">
+				<div class="header__ad">
 					<a class="ad__img" href="#">
-						<img src="/img/theme_ad.png" alt="Красивые фоны для вашего браузера">
+						<img src="img/theme_ad.png" alt="Красивые фоны для вашего браузера">
 					</a>
-					<h2 class="ad__title">
-						<a class="ad__title-link">Красивые фоны для вашего браузера</a>
+					<h2 class="header__ad__title">
+						<a class="header__ad__title-link">Красивые фоны для вашего браузера</a>
 					</h2>
-					<div class="ad__description">
+					<div class="header__ad__description">
 						<span class="ad__content">Элементы Яндекса</span>
 					</div>
 				</div>
@@ -107,8 +109,9 @@
 			<div class="search">
 				<form>
 					<div class="input-box">
-						<input class="input-box__input">
-						<button class="keyboard-btn"><img src="img/keyboard.svg"></button>
+						<label for="search-field" class="input-label-hidden">Поле для поискового запроса</label>
+						<input id="search-field" class="input-box__input" name="Поисковой запрос" type="text">
+						<button class="keyboard-btn"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
 					</div><button class="search-btn" type="submit">Найти</button>
 				</form>
 				<div class="input-box__misc">
@@ -122,6 +125,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="horizontal-banner">
+			<a class="horizontal-banner__link" href="#">
+				<img class="horizontal-banner__img" src="img/horizontal-banner.png" alt="рекламный баннер">
+			</a>
+		</div>
 		<div class="widgets-area">
 			<div class="widgets-area__column">
 				<div class="widget-edging">
@@ -131,7 +139,7 @@
 						</h2>
 						<div class="widget-value">
 							<a href="#">
-								<img class="widget-value__icon" src="img/rain_cloud.svg">
+								<img class="widget-value__icon" src="img/rain_cloud.svg" alt="погода - облачно, дождь">
 							</a>
 							<a class="widget-value__link" href="#">
 								<span>+8 °C</span>
@@ -176,6 +184,11 @@
 							<a class="list-item__link-bold" href="#">Коллекции</a>
 							<span> — </span>
 							<a class="" href="#">интерьер гостинной</a>
+						</li>
+						<li class="widget__list-item">
+							<a class="list-item__link-bold" href="#">Картинки</a>
+							<span> — </span>
+							<a class="" href="#">времена года</a>
 						</li>
 					</ul>
 				</div>
@@ -281,12 +294,12 @@
 							<span class="text-gray">драма</span>
 						</li>
 						<li class="widget__list-item">
-							<a class="widget__text-marg-r">Крым</a>
-							<span class="text-gray">драма</span>
+							<a class="widget__text-marg-r">Гномы в доме</a>
+							<span class="text-gray">мультфильм</span>
 						</li>
 						<li class="widget__list-item">
-							<a class="widget__text-marg-r">Крым</a>
-							<span class="text-gray">драма</span>
+							<a class="widget__text-marg-r">Ночные игры</a>
+							<span class="text-gray">боевик</span>
 						</li>
 					</ul>
 				</div>
