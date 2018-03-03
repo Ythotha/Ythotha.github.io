@@ -78,39 +78,56 @@
 				</div>
 			</div>
 		</header>
-		<div class="search-area">
+		<section class="search-area">
 			<div class="logo"><a href="#"><img src="img/logo.svg" alt="Яндекс"></a></div>
-			<div class="search-area__header">
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Карты</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Маркет</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Новости</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Переводчик</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Картинки</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Видео</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">Музыка</a>
-				</h3>
-				<h3 class="search-area__header-nav">
-					<a class="header-nav__link" href="#">ещё</a>
-				</h3>
-			</div>
+			<nav class="search-area__header">
+				<ul class="menu">
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Карты</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Маркет</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Новости</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Переводчик</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Картинки</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Видео</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">Музыка</a>
+						</h3>
+					</li>
+					<li class="search-area__header-nav">
+						<h3 class="header-nav__title">
+							<a class="header-nav__link" href="#">ещё</a>
+						</h3>
+					</li>
+				</ul>
+			</nav>
 			<div class="search">
 				<form action="" method="get" class="search__form">
 					<div class="input-box">
-						<label for="search-field" class="input-label-hidden">Поле для поискового запроса</label>
-						<input id="search-field" class="input-box__input" name="yandex-search" type="search">
+						<input class="input-box__input" name="yandex-search" type="search" title="Поиск">
 						<button class="keyboard-btn" type="button"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
 					</div><button class="search-btn" type="submit">Найти</button>
 				</form>
@@ -124,15 +141,15 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="horizontal-banner">
 			<a class="horizontal-banner__link" href="#">
 				<img class="horizontal-banner__img" src="img/horizontal-banner.png" alt="рекламный баннер">
 			</a>
 		</div>
-		<div class="widgets-area">
+		<section class="widgets-area">
 			<div class="widgets-area__column">
-				<div class="widget-edging">
+				<article class="widget-edging">
 					<div class="widget__header">
 						<h2 class="widget__title">
 							<a class="widget__title-link" href="#">Погода</a>
@@ -152,8 +169,8 @@
 							<a class="widget__text" href="#">день +10 °C</a>
 						</li>
 					</ul>
-				</div>
-				<div class="widget-edging">
+				</article>
+				<article class="widget-edging">
 					<div class="widget__header">
 						<h2 class="widget__title">
 							<a class="widget__title-link" href="#">Посещаемое</a>
@@ -191,12 +208,12 @@
 							<a class="widget__text" href="#">времена года</a>
 						</li>
 					</ul>
-				</div>
+				</article>
 			</div>
 
 
 			<div class="widgets-area__column">
-				<div class="widget-edging">
+				<article class="widget-edging">
 					<div class="widget__header">
 						<h2 class="widget__title">
 							<a class="widget__title-link" href="#">Карты Пензы</a>
@@ -216,9 +233,9 @@
 							<a class="list-item_link-bold" href="#">Междугородние автобусы</a>
 						</li>
 					</ul>
-				</div>
+				</article>
 
-				<div class="widget-edging">
+				<article class="widget-edging">
 					<div class="widget__header">
 						<h2 class="widget__title">
 							<a class="widget__title-link" href="#">Телепрограмма</a>
@@ -274,10 +291,10 @@
 							</span>
 						</li>
 					</ul>
-				</div>
+				</article>
 			</div>
 			<div class="widgets-area__column">
-				<div class="widget-edging">
+				<article class="widget-edging">
 					<div class="widget__header">
 						<h2 class="widget__title">
 							<a class="widget__title-link" href="#">Афиша</a>
@@ -305,9 +322,9 @@
 							<span class="text-gray">боевик</span>
 						</li>
 					</ul>
-				</div>
+				</article>
 			</div>
-		</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer-content">

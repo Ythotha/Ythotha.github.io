@@ -1,4 +1,4 @@
-﻿html{
+html{
     min-height: 100%;
     position: relative;
 }
@@ -24,7 +24,7 @@ h2, h3{
     font-weight: 400;
 }
 ul{
-    padding-left: 0px;
+    padding-left: 0;
     margin: 0;
 }
 
@@ -138,6 +138,10 @@ ul{
     margin-top: 9px;
     margin-bottom: 10px;
 }
+.menu{
+    list-style-type: none;
+
+}
 .search-area__header-nav{
     display: inline-block;
     vertical-align: middle;
@@ -166,9 +170,6 @@ ul{
     width: 765px;
     height: 38px;
     border: 2px solid #ffdb4d;
-}
-.input-label-hidden{
-    display: none;
 }
 .input-box__input{
     box-sizing: border-box;
@@ -232,7 +233,7 @@ ul{
     line-height: 15px;
     background-image: url("../img/yabrowser.png");
     background-repeat: no-repeat;
-    background-position: 0% 50%;
+    background-position: 0 50%;
     background-size: contain;
 }
 .horizontal-banner{
@@ -291,7 +292,7 @@ ul{
     font-size: 138.5%;
     line-height: 32px;
     padding-left: 35px;
-    background: url("../img/rain_cloud.svg") 0% 50% no-repeat;
+    background: url("../img/rain_cloud.svg") 0 50% no-repeat;
     background-size: contain;
 }
 .tv-stream__btn{
