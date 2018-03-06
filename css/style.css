@@ -31,7 +31,7 @@ ul{
 .main-container{
     width: 936px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 73px;
     padding-bottom: 191px;
 }
 .header{
@@ -45,34 +45,29 @@ ul{
 
 .news{
     width: 569.391px;
-    /*height: 171.719px;*/
     margin-bottom: 8px;
 }
 .news__header{
 
 }
 .news__tabs{
-    height: 36px;
     display: inline-block;
     vertical-align: baseline;
 }
 .news__tab{
     display: inline-block;
     vertical-align: middle;
-    height: 36px;
     margin-right: 8px;
+    color: #6da2e1;
 }
 .news__tab-link{
     margin-top: 4px;
     margin-bottom: 10px;
     display: inline-block;
     vertical-align: middle;
-    color: #6da2e1;
+    color: inherit;
 }
 .news__tab-link_active{
-    color: #0054b9;
-}
-.widget__title-link{
     color: #0054b9;
 }
 .text-gray{
@@ -85,12 +80,15 @@ ul{
     color: #999;
 }
 .news__time{
-    color: #999;
+    color: inherit;
 }
 
 .news__list-item{
     margin-bottom: 9px;
     line-height: 1.36;
+}
+.news__list-item:last-child{
+    margin-bottom: 0;
 }
 
 .courses__item{
@@ -180,16 +178,28 @@ ul{
     padding-right: 40px;
 }
 .search-btn{
+    position: relative;
     cursor: pointer;
     box-sizing: border-box;
-    width: 79px;
-    height: 38px;
+    padding: 10px 16px;
     background-color: #ffdb4d;
     border: none;
     font-size: 16px;
 }
 .search-btn:hover{
     background-color: #ffd633;
+}
+.search-btn:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-color: rgba(255,219,76,0);
+    border-left-color: #ffdb4d;
+    top: 0px;
+    right: -9px;
+    border-width: 19px 0 19px 9px;
 }
 
 .keyboard-btn{
@@ -215,6 +225,7 @@ ul{
 .misc__input-samples{
     display: inline-block;
     vertical-align: middle;
+    max-width: 500px;
 }
 .input-samples__sample{
     color: #999;
@@ -224,6 +235,7 @@ ul{
     float: right;
     margin-right: 83px;
     font-size: 107.7%;
+    max-width: 350px;
 }
 .browser-ad__img{
     width: 62px;
@@ -246,12 +258,10 @@ ul{
 }
 .horizontal-banner__img{
     width: 728px;
-    height: 90px;
 }
 .widgets-area{
     margin-top: 20px;
     width: 900px;
-    height: 332px;
     font-size: 109.24%;
 }
 .widgets-area__column{
@@ -260,7 +270,6 @@ ul{
     display: inline-block;
     vertical-align: top;
     width: 294px;
-    height: 332px;
     /*padding-right: 8px;*/
     margin-right: 2px;
 }
@@ -274,21 +283,18 @@ ul{
 .widget__title{
     display: inline-block;
     vertical-align: middle;
+    overflow: hidden;
+}
+.widget__title-link{
+    color: #0054b9;
 }
 .widget-value{
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
-.widget-value__icon{
-    position: absolute;
-    bottom: 0;
-    width: 32px;
-    height: 32px;
-}
 .widget-value__link{
     display: inline-block;
-    height: 32px;
     font-size: 138.5%;
     line-height: 32px;
     padding-left: 35px;
@@ -298,9 +304,9 @@ ul{
 .tv-stream__btn{
     cursor: pointer;
     width: 104px;
-    height: 27px;
     border: none;
     border-radius: 5px;
+    padding: 6px;
     background-color: #418af9;
     background-image: linear-gradient(to right,#00a3fa,#716ef8);
     color: #fff;
@@ -364,23 +370,28 @@ ul{
     position: relative;
     box-sizing: border-box;
     width: 896px;
-    height: 100px;
+    /*height: 100px;*/
     /*padding-left: 20px;*/
     margin: 0 auto;
     color: inherit;
 }
 .footer__column{
     position: relative;
+    max-width: 110px;
     display: inline-block;
     vertical-align: top;
     height: inherit;
     margin-right: 42px;
     color: inherit;
 }
+.footer__column:first-child{
+    max-width: 283px;
+}
 .footer__column:last-child{
     margin-right: 0;
     position: absolute;
     right: 60px;
+    bottom: 0;
 }
 .footer__logo{
     position: absolute;
