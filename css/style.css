@@ -4,7 +4,7 @@ html{
 }
 body{
     min-height: 100%;
-    font: 81.25% Arial,Helvetica,sans-serif;
+    font: 13px Arial,Helvetica,sans-serif;
     margin: 0;
 }
 a{
@@ -16,7 +16,7 @@ a:hover{
     color: #c00;
 }
 h2{
-    font-size: 136%;
+    font-size: 19px;
 }
 h2, h3{
     margin-top: 0;
@@ -40,11 +40,13 @@ ul{
 .header__column{
     display: inline-block;
     vertical-align: bottom;
-    font-size: 109.24%;
+    font-size: 14px;
+}
+.header__column:first-child{
+    width: 570px;
 }
 
 .news{
-    width: 569.391px;
     margin-bottom: 8px;
 }
 .news__header{
@@ -57,25 +59,25 @@ ul{
 .news__tab{
     display: inline-block;
     vertical-align: middle;
+    margin-top: 4px;
     margin-right: 8px;
+    margin-bottom: 10px;
     color: #6da2e1;
 }
+.news__tab_active{
+    color: #0054b9;
+}
 .news__tab-link{
-    margin-top: 4px;
-    margin-bottom: 10px;
     display: inline-block;
     vertical-align: middle;
     color: inherit;
-}
-.news__tab-link_active{
-    color: #0054b9;
 }
 .text-gray{
     color: #999999;
 }
 .news__date{
     font-family:  Verdana,Arial,Helvetica,sans-serif;
-    font-size: 84.6%;
+    font-size: 12px;
     line-height: 1.36;
     color: #999;
 }
@@ -103,7 +105,7 @@ ul{
     margin-right: 2px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 92.3%;
+    font-size: 13px;
     font-weight: 700;
 }
 .courses__change{
@@ -150,7 +152,7 @@ ul{
 }
 .header-nav__link{
     color: #0054b9;
-    font-size: 16.0602px;
+    font-size: 16px;
 }
 
 .search__input-box{
@@ -219,7 +221,7 @@ ul{
 .input-box__misc{
     margin-top: 8px;
     width: 910px;
-    font-size: 109.24%;
+    font-size: 14px;
     line-height: 1.3;
 }
 .misc__input-samples{
@@ -234,7 +236,7 @@ ul{
 .search__browser-ad{
     float: right;
     margin-right: 83px;
-    font-size: 107.7%;
+    font-size: 15px;
     max-width: 350px;
 }
 .browser-ad__img{
@@ -262,7 +264,7 @@ ul{
 .widgets-area{
     margin-top: 20px;
     width: 900px;
-    font-size: 109.24%;
+    font-size: 14px;
 }
 .widgets-area__column{
     position: relative;
@@ -295,7 +297,7 @@ ul{
 }
 .widget-value__link{
     display: inline-block;
-    font-size: 138.5%;
+    font-size: 19px;
     line-height: 32px;
     padding-left: 35px;
     background: url("../img/rain_cloud.svg") 0 50% no-repeat;
@@ -364,14 +366,12 @@ ul{
     color: gray;
     padding-top: 32px;
     padding-bottom: 39px;
-    font-size: 109.24%;
+    font-size: 14px;
 }
 .footer-content{
     position: relative;
     box-sizing: border-box;
     width: 896px;
-    /*height: 100px;*/
-    /*padding-left: 20px;*/
     margin: 0 auto;
     color: inherit;
 }
