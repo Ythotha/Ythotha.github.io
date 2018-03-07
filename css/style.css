@@ -45,6 +45,9 @@ ul{
 .header__column:first-child{
     width: 570px;
 }
+.header__column:last-child{
+    width: 274px;
+}
 
 .news{
     margin-bottom: 8px;
@@ -122,7 +125,6 @@ ul{
     background-repeat: no-repeat;
 }
 .header__ad{
-    width: 250px;
     padding: 8px 4px 4px 20px;
 }
 .header__ad__title{
