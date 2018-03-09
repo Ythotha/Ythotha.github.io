@@ -186,6 +186,9 @@ h2, h3{
     height: 38px;
     border: 2px solid #ffdb4d;
 }
+.input-box__label{
+    display: none;
+}
 .input-box__input{
     box-sizing: border-box;
     width: inherit;
@@ -431,6 +434,8 @@ h2, h3{
     color: #c00;
 }
 .logo{
+    display: inline-block;
+    vertical-align: top;
     position: absolute;
     left: -125px;
     top: -4px;

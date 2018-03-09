@@ -78,7 +78,7 @@
 			</div>
 		</header>
 		<div class="search-area">
-			<div class="logo"><a class="" href="#"><img src="img/logo.svg" alt="Яндекс"></a></div>
+			<a class="logo" href="#"><img class="logo__img" src="img/logo.svg" alt="Яндекс"></a>
 			<nav class="search-area__header">
 				<ul class="menu ul-padding-nullification">
 					<li class="search-area__header-nav">
@@ -126,7 +126,8 @@
 			<div class="search">
 				<form action="" method="get" class="search__form">
 					<div class="input-box">
-						<input class="input-box__input" name="yandex-search" type="search" title="Поиск">
+                        <label for="search-field" class="input-box__label">Поле для поискового запроса</label>
+						<input id="search-field" class="input-box__input" name="yandex-search" type="search" title="Поиск">
 						<button class="keyboard-btn" type="button"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
 					</div><button class="search-btn" type="submit">Найти</button>
 				</form>
