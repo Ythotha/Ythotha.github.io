@@ -202,21 +202,29 @@ h2, h3{
     background-color: #ffdb4d;
     border: none;
     font-size: 16px;
+    line-height: 18px;
 }
 .search-btn:hover{
     background-color: #ffd633;
 }
 .search-btn:after{
     position: absolute;
+    top: 0;
+    right: -9px;
     width: 0;
     height: 0;
     content: '';
-    border-style: solid;
-    border-color: rgba(255,219,76,0);
-    border-left-color: #ffdb4d;
-    top: 0;
-    right: -9px;
-    border-width: 19px 0 19px 9px;
+    border-top: 19px solid transparent;
+    border-left: 9px solid #ffdb4d;
+    border-bottom: 19px solid transparent;
+}
+.search-btn:hover:after{
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 19px solid transparent;
+    border-left: 9px solid #ffd633;
+    border-bottom: 19px solid transparent;
 }
 
 .keyboard-btn{
