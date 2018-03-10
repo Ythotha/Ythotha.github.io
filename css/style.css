@@ -37,10 +37,7 @@ h2, h3{
     width: 274px;
     margin-left: 26px;
 }
-.ad__header{
-    width: 170px;
-}
-
+/*----------НОВОСТИ----------*/
 .news{
     margin-bottom: 8px;
 }
@@ -84,7 +81,6 @@ h2, h3{
 .news__time{
     color: inherit;
 }
-
 .news__list-item{
     margin-bottom: 9px;
     line-height: 1.36;
@@ -100,7 +96,7 @@ h2, h3{
 .link-black:hover{
     color: #c00;
 }
-
+/*----------КОТИРОВКИ----------*/
 .courses__item{
     display: inline-block;
     vertical-align: middle;
@@ -129,24 +125,38 @@ h2, h3{
     background-image: url(../img/dots.svg);
     background-repeat: no-repeat;
 }
-
+/*----------РЕКЛАМА----------*/
+.ad__header {
+    width: 170px;
+}
 .ad__title{
     margin-top: 10px;
 }
 .ad__title-link{
     color: #0054b9;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ad__title-link:hover{
+    color: #c00;
 }
 .ad__content{
     margin-top: 10px;
 }
-
+/*----------ПОИСК----------*/
 .search-area{
     position: relative;
     margin-top: 36px;
     padding-left: 20px;
 }
+.logo{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: -125px;
+    top: -4px;
+}
 .search-area__header{
-    margin-top: 9px;
     margin-bottom: 10px;
 }
 .menu{
@@ -169,14 +179,12 @@ h2, h3{
     font-size: 16px;
     text-decoration: none;
 }
-
 .search__input-box{
     position: relative;
     box-sizing: border-box;
     width: 910px;
     margin-top: 5px;
 }
-
 .input-box{
     position: relative;
     box-sizing: border-box;
@@ -229,7 +237,6 @@ h2, h3{
     border-left: 9px solid #ffd633;
     border-bottom: 19px solid transparent;
 }
-
 .keyboard-btn{
     opacity: .5;
     cursor: pointer;
@@ -243,7 +250,6 @@ h2, h3{
 .keyboard-btn:hover{
     opacity: 1;
 }
-
 .input-box__misc{
     margin-top: 8px;
     width: 910px;
@@ -253,12 +259,16 @@ h2, h3{
 .misc__input-samples{
     display: inline-block;
     vertical-align: middle;
-    max-width: 500px;
+    max-width: 470px;
 }
 .input-samples__sample{
     color: #999;
+    cursor: pointer;
+    text-decoration: none;
 }
-
+.input-samples__sample:hover{
+    color: #c00;
+}
 .search__browser-ad{
     float: right;
     margin-right: 83px;
@@ -281,12 +291,10 @@ h2, h3{
     margin-top: 14px;
     padding-left: 20px;
 }
-.horizontal-banner__link{
-
-}
 .horizontal-banner__img{
     width: 728px;
 }
+/*----------ВИДЖЕТЫ----------*/
 .widgets-area{
     margin-top: 20px;
     width: 900px;
@@ -385,7 +393,7 @@ h2, h3{
     font-weight: 700;
     color: inherit;
 }
-
+/*----------ФУТЕР----------*/
 .footer{
     position: absolute;
     bottom: 0;
@@ -432,11 +440,4 @@ h2, h3{
 }
 .footer__link:hover{
     color: #c00;
-}
-.logo{
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    left: -125px;
-    top: -4px;
 }
