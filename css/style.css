@@ -2,18 +2,11 @@ html{
     min-height: 100%;
     position: relative;
 }
+
 body{
     min-height: 100%;
     font: 13px Arial,Helvetica,sans-serif;
     margin: 0;
-}
-h2{
-    font-size: 19px;
-}
-h2, h3{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 400;
 }
 
 .main-container{
@@ -22,53 +15,62 @@ h2, h3{
     padding-top: 73px;
     padding-bottom: 191px;
 }
+
 .header{
     padding-left: 20px;
 }
+
 .header__column{
     display: inline-block;
     vertical-align: bottom;
     font-size: 14px;
 }
-.header__column:first-child{
-    width: 570px;
-}
-.header__column:last-child{
-    width: 274px;
-    margin-left: 26px;
-}
+
 /*----------НОВОСТИ----------*/
+
 .news{
     margin-bottom: 8px;
 }
+
+.header__news{
+    width: 570px;
+}
+
+.news__header{
+    margin-bottom: 10px;
+}
+
 .news__tabs{
     display: inline-block;
     vertical-align: bottom;
-    margin-bottom: 10px;
 }
+
 .news__tab{
     display: inline-block;
     vertical-align: bottom;
-    /*margin-top: 4px;*/
     margin-right: 8px;
-    /*margin-bottom: 10px;*/
     color: #6da2e1;
 }
+
 .news__tab_active{
     color: #0054b9;
 }
+
+.title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 19px;
+}
+
 .news__tab-link{
     display: inline-block;
     vertical-align: middle;
-    color: inherit;
-    text-decoration: none;
 }
+
 .text-gray{
     color: #999999;
 }
-.text-decoration-none{
-    text-decoration: none;
-}
+
 .news__date{
     font-family:  Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
@@ -76,79 +78,98 @@ h2, h3{
     color: #999;
     display: inline-block;
     vertical-align: bottom;
-    margin-bottom: 11px;
 }
+
 .news__time{
     color: inherit;
 }
+
 .news__list-item{
     margin-bottom: 9px;
     line-height: 1.36;
 }
+
 .news__list-item:last-child{
     margin-bottom: 0;
 }
-.link-black{
-    color: black;
+
+.link{
+    color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
-.link-black:hover{
+
+.link:hover{
     color: #c00;
 }
+
+.link_grey{
+    color: #999;
+}
+
 /*----------КОТИРОВКИ----------*/
+
 .courses__item{
     display: inline-block;
     vertical-align: middle;
     margin-right: 18px;
 }
+
 .courses__item:last-child{
     margin-right: 0;
 }
-.courses__title{
+
+.courses__name{
     margin-right: 2px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 700;
 }
+
 .courses__change{
     color: #999;
     margin-left: 3px;
 }
+
 .courses__more{
     opacity: .2;
     display: inline-block;
     vertical-align: middle;
     width: 15px;
     height: 15px;
-    background-image: url(../img/dots.svg);
+    background-image: url("../img/dots.svg");
     background-repeat: no-repeat;
 }
+
 /*----------РЕКЛАМА----------*/
-.ad__header {
+
+.header__ad{
+    width: 274px;
+    margin-left: 20px;
+}
+
+.ad__header{
     width: 170px;
 }
+
 .ad__title{
     margin-top: 10px;
-}
-.ad__title-link{
     color: #0054b9;
-    text-decoration: none;
-    cursor: pointer;
 }
-.ad__title-link:hover{
-    color: #c00;
-}
+
 .ad__content{
     margin-top: 10px;
 }
+
 /*----------ПОИСК----------*/
+
 .search-area{
     position: relative;
     margin-top: 36px;
     padding-left: 20px;
 }
+
 .logo{
     display: inline-block;
     vertical-align: top;
@@ -156,36 +177,48 @@ h2, h3{
     left: -125px;
     top: -4px;
 }
+
 .search-area__header{
     margin-bottom: 10px;
 }
+
 .menu{
     list-style-type: none;
 }
-.ul-padding-nullification{
+
+.list{
     padding-left: 0;
     margin: 0;
+    list-style-type: none;
 }
+
+.list_marked{
+    list-style-type: disc;
+}
+
 .search-area__header-nav{
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
 }
+
 .search-area__header-nav:last-child{
     margin-right: 0;
 }
+
 .header-nav__link{
     color: #0054b9;
     font-size: 16px;
     text-decoration: none;
 }
+
 .search__input-box{
     position: relative;
     box-sizing: border-box;
     width: 910px;
-    margin-top: 5px;
 }
-.input-box{
+
+.search__input-box{
     position: relative;
     box-sizing: border-box;
     display: inline-block;
@@ -194,10 +227,12 @@ h2, h3{
     height: 38px;
     border: 2px solid #ffdb4d;
 }
-.input-box__label{
+
+.search__label{
     display: none;
 }
-.input-box__input{
+
+.search__input{
     box-sizing: border-box;
     width: inherit;
     height: 100%;
@@ -205,7 +240,8 @@ h2, h3{
     font-size: 16px;
     padding-right: 40px;
 }
-.search-btn{
+
+.search__find-btn{
     position: relative;
     cursor: pointer;
     box-sizing: border-box;
@@ -215,10 +251,12 @@ h2, h3{
     font-size: 16px;
     line-height: 18px;
 }
-.search-btn:hover{
+
+.search__find-btn:hover{
     background-color: #ffd633;
 }
-.search-btn:after{
+
+.search__find-btn:after{
     position: absolute;
     top: 0;
     right: -9px;
@@ -229,7 +267,8 @@ h2, h3{
     border-left: 9px solid #ffdb4d;
     border-bottom: 19px solid transparent;
 }
-.search-btn:hover:after{
+
+.search__find-btn:hover:after{
     width: 0;
     height: 0;
     content: '';
@@ -237,7 +276,8 @@ h2, h3{
     border-left: 9px solid #ffd633;
     border-bottom: 19px solid transparent;
 }
-.keyboard-btn{
+
+.search__keyboard-btn{
     opacity: .5;
     cursor: pointer;
     border: none;
@@ -247,59 +287,64 @@ h2, h3{
     right: 0;
     transform: translate(0, -6px);
 }
-.keyboard-btn:hover{
+
+.search__keyboard-btn:hover{
     opacity: 1;
 }
-.input-box__misc{
+
+.search__miscellaneous{
     margin-top: 8px;
     width: 910px;
     font-size: 14px;
     line-height: 1.3;
 }
-.misc__input-samples{
+
+.search__sample{
     display: inline-block;
     vertical-align: middle;
     max-width: 470px;
 }
+
 .input-samples__sample{
     color: #999;
-    cursor: pointer;
-    text-decoration: none;
 }
-.input-samples__sample:hover{
-    color: #c00;
-}
+
 .search__browser-ad{
     float: right;
     margin-right: 83px;
     font-size: 15px;
     max-width: 350px;
 }
+
 .browser-ad__img{
     width: 62px;
 }
+
 .browser-ad__link{
     padding-left: 62px;
     line-height: 15px;
-    background-image: url("../img/yabrowser.png");
-    background-repeat: no-repeat;
-    background-position: 0 50%;
+    background: url("../img/yabrowser.png") 0 50% no-repeat;
     background-size: contain;
 }
+
 .horizontal-banner{
     width: 936px;
     margin-top: 14px;
     padding-left: 20px;
 }
+
 .horizontal-banner__img{
     width: 728px;
 }
+
 /*----------ВИДЖЕТЫ----------*/
+
 .widgets-area{
-    margin-top: 20px;
+    margin-top: 25px;
     width: 900px;
     font-size: 14px;
 }
+
 .widgets-area__column{
     position: relative;
     box-sizing: border-box;
@@ -309,35 +354,59 @@ h2, h3{
     /*padding-right: 8px;*/
     margin-right: 2px;
 }
-.widget-edging{
-    margin-top: 6px;
-    padding: 8px 4px 4px 20px;
+
+.widget-main{
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
+
 .widget__header{
-    margin: 4px 8px 10px 0;
+    margin-bottom: 8px;
 }
+
 .widget__title{
     display: inline-block;
     vertical-align: middle;
-    overflow: hidden;
-}
-.widget__title-link{
     color: #0054b9;
-    text-decoration: none;
 }
+
+.link_bold{
+    font-weight: 700;
+}
+
 .widget-value{
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
+
 .widget-value__link{
     display: inline-block;
+    vertical-align: middle;
     font-size: 19px;
     line-height: 32px;
-    padding-left: 35px;
+    padding-left: 38px;
+}
+
+.widget-value__link_weather_rain{
     background: url("../img/rain_cloud.svg") 0 50% no-repeat;
     background-size: contain;
 }
+
+.widget-value__link_weather_snow{
+    background: url("../img/snow.svg") 0 50% no-repeat;
+    background-size: contain;
+}
+
+.widget-value__link_weather_crescent{
+    background: url("../img/skc_n.svg") 0 50% no-repeat;
+    background-size: contain;
+}
+
+.widget__content{
+    color: #000;
+}
+
 .tv-stream__btn{
     cursor: pointer;
     width: 104px;
@@ -345,15 +414,17 @@ h2, h3{
     border-radius: 5px;
     padding: 6px;
     background-color: #418af9;
-    background-image: linear-gradient(to right,#00a3fa,#716ef8);
+    background-image: linear-gradient(to right, #00a3fa, #716ef8);
     color: #fff;
     transform: scale(.88);
     /*transition: transform .15s ease-out;*/
 }
+
 .tv-stream__btn:hover{
     transform: scale(1);
     transition: transform .15s ease-out;
 }
+
 .tv-stream__play-icon{
     display: inline-block;
     vertical-align: top;
@@ -362,26 +433,24 @@ h2, h3{
     height: 14px;
     background: url("../img/tv-online.webp") 50% 50% no-repeat;
 }
+
 .widget__list{
-    list-style-type: none;
-    width: inherit;
-    padding: 0;
     color: inherit;
     line-height: 1.36;
 }
+
 .widget__list-item{
     margin-right: 10px;
     margin-bottom: 9px;
     color: inherit;
 }
+
 .widget__list-item:last-child{
     margin-bottom: 0;
     margin-right: 0;
 }
-.list-item_link-bold{
-    font-weight: 700;
-}
-.widget__text-marg-r{
+
+.widget__text_marg-r{
     margin-right: 8px;
 }
 
@@ -389,21 +458,20 @@ h2, h3{
     display: inline-block;
     vertical-align: top;
 }
-.list-item__link-bold{
-    font-weight: 700;
-    color: inherit;
-}
+
 /*----------ФУТЕР----------*/
+
 .footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #f0f0f0;
-    color: gray;
+    color: #999;
     padding-top: 32px;
     padding-bottom: 39px;
     font-size: 14px;
 }
+
 .footer-content{
     position: relative;
     box-sizing: border-box;
@@ -411,6 +479,7 @@ h2, h3{
     margin: 0 auto;
     color: inherit;
 }
+
 .footer__column{
     position: relative;
     max-width: 110px;
@@ -420,24 +489,24 @@ h2, h3{
     margin-right: 42px;
     color: inherit;
 }
+
 .footer__column:first-child{
     max-width: 283px;
 }
+
 .footer__column:last-child{
     margin-right: 0;
     position: absolute;
     right: 60px;
     bottom: 0;
 }
+
+.footer__navigation{
+    color: inherit;
+}
+
 .footer__logo{
     position: absolute;
     bottom: 0;
     opacity: 0.4;
-}
-.footer__link{
-    color: rgba(0,0,0,.45);
-    text-decoration: none;
-}
-.footer__link:hover{
-    color: #c00;
 }
