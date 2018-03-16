@@ -28,9 +28,6 @@ body{
 
 /*----------НОВОСТИ----------*/
 
-.news{
-    margin-bottom: 8px;
-}
 
 .header__news{
     width: 570px;
@@ -93,6 +90,16 @@ body{
     margin-bottom: 0;
 }
 
+.list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list_marked{
+    list-style-type: disc;
+}
+
 .link{
     color: inherit;
     text-decoration: none;
@@ -108,6 +115,10 @@ body{
 }
 
 /*----------КОТИРОВКИ----------*/
+
+.news__courses{
+    margin-top: 8px;
+}
 
 .courses__item{
     display: inline-block;
@@ -171,8 +182,6 @@ body{
 }
 
 .logo{
-    display: inline-block;
-    vertical-align: top;
     position: absolute;
     left: -125px;
     top: -4px;
@@ -182,18 +191,10 @@ body{
     margin-bottom: 10px;
 }
 
-.menu{
-    list-style-type: none;
-}
-
-.list{
-    padding-left: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.list_marked{
-    list-style-type: disc;
+.search__form:after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .search-area__header-nav{
@@ -206,10 +207,9 @@ body{
     margin-right: 0;
 }
 
-.header-nav__link{
-    color: #0054b9;
+.search-area__title{
     font-size: 16px;
-    text-decoration: none;
+    color: #0054b9;
 }
 
 .search__input-box{
@@ -221,8 +221,7 @@ body{
 .search__input-box{
     position: relative;
     box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
+    float: left;
     width: 765px;
     height: 38px;
     border: 2px solid #ffdb4d;
@@ -243,6 +242,7 @@ body{
 
 .search__find-btn{
     position: relative;
+    float: left;
     cursor: pointer;
     box-sizing: border-box;
     padding: 10px 16px;
@@ -351,7 +351,6 @@ body{
     display: inline-block;
     vertical-align: top;
     width: 294px;
-    /*padding-right: 8px;*/
     margin-right: 2px;
 }
 
@@ -366,7 +365,7 @@ body{
 
 .widget__title{
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     color: #0054b9;
 }
 
@@ -378,6 +377,10 @@ body{
     position: relative;
     display: inline-block;
     vertical-align: middle;
+}
+
+.value-alignment{
+    top: -4px;
 }
 
 .widget-value__link{
@@ -450,7 +453,11 @@ body{
     margin-right: 0;
 }
 
-.widget__text_marg-r{
+.widget__time{
+    margin-right: 8px;
+}
+
+.widget__show-name{
     margin-right: 8px;
 }
 

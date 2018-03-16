@@ -8,8 +8,7 @@
 <body>
 	<main class="main-container">
 		<header class="header">
-			<div class="header__column">
-				<div class="news header__news">
+			<div class="news header__news header__column">
 					<div class="news__header">
 						<div class="news__tabs">
 							<h2 class="news__tab news__tab_active title">
@@ -24,7 +23,7 @@
 						</span>
 					</div>
 					<div class="news__content">
-						<ul class="news__list list">
+						<ul class="news__list list list_marked">
 							<li class="news__list-item">
 								<a class="news__text link" href="#">Глава Каталонии подписал Декларацию независимости от Испании</a>
 							</li>
@@ -42,83 +41,80 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="courses">
-					<div class="courses__item">
-						<a class="courses__name link" href="#">usd цб</a>
-						<span class="courses__value">58.07</span>
-						<span class="courses__change">+0.06</span>
+					<div class="courses news__courses">
+						<div class="courses__item">
+							<a class="courses__name link" href="#">usd цб</a>
+							<span class="courses__value">58.07</span>
+							<span class="courses__change">+0.06</span>
+						</div>
+						<div class="courses__item">
+							<a class="courses__name link" href="#">eur цб</a>
+							<span class="courses__value">68.36</span>
+							<span class="courses__change">-0.03</span>
+						</div>
+						<div class="courses__item">
+							<a class="courses__name link" href="#">нефть</a>
+							<span class="courses__value">56,54</span>
+							<span class="courses__change">+1,58%</span>
+						</div>
 					</div>
-					<div class="courses__item">
-						<a class="courses__name link" href="#">eur цб</a>
-						<span class="courses__value">68.36</span>
-						<span class="courses__change">-0.03</span>
-					</div>
-					<div class="courses__item">
-						<a class="courses__name link" href="#">нефть</a>
-						<span class="courses__value">56,54</span>
-						<span class="courses__change">+1,58%</span>
-					</div>
-				</div>
 			</div>
-			<div class="header__column">
-				<div class="ad header__ad">
-					<div class="ad__header">
-						<a class="ad__img-link" href="#">
-							<img class="ad__img" src="img/theme_ad.png" alt="Красивые фоны для вашего браузера">
-						</a>
-						<h2 class="ad__title title">
-							<a class="ad__title-link link">Красивые фоны для браузера</a>
-						</h2>
-					</div>
-					<div class="ad__content">
-						<span class="ad__text">Элементы Яндекса</span>
-					</div>
+			<div class="ad header__ad header__column">
+				<div class="ad__header">
+					<a class="ad__img-box" href="#">
+						<img class="ad__img" src="img/theme_ad.png" alt="Красивые фоны для вашего браузера">
+					</a>
+					<h2 class="ad__title title">
+						<a class="ad__title-link link">Красивые фоны для браузера</a>
+					</h2>
+				</div>
+				<div class="ad__content">
+					<span class="ad__text">Элементы Яндекса</span>
 				</div>
 			</div>
 		</header>
 		<div class="search-area">
-			<a class="logo" href="#"><img class="logo__img" src="img/logo.svg" alt="Яндекс"></a>
+			<div class="logo" href="#"><img class="logo__img" src="img/logo.svg" alt="Яндекс"></div>
 			<nav class="search-area__header">
-				<ul class="menu list">
+				<ul class="list">
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Карты</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Карты</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Маркет</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Маркет</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Новости</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Новости</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Переводчик</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Переводчик</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Картинки</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Картинки</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Видео</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Видео</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">Музыка</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">Музыка</a>
 						</h3>
 					</li>
 					<li class="search-area__header-nav">
-						<h3 class="header-nav__title title">
-							<a class="header-nav__link" href="#">ещё</a>
+						<h3 class="search-area__title title">
+							<a class="link" href="#">ещё</a>
 						</h3>
 					</li>
 				</ul>
@@ -128,8 +124,11 @@
 					<div class="search__input-box">
                         <label class="search__label" for="search-field">Поле для поискового запроса</label>
 						<input class="search__input" id="search-field" name="yandex-search" type="search" title="Поиск">
-						<button class="search__keyboard-btn" type="button"><img src="img/keyboard.svg" alt="экранная клавиатура"></button>
-					</div><button class="search__find-btn" type="submit">Найти</button>
+						<button class="search__keyboard-btn" type="button">
+							<img src="img/keyboard.svg" alt="экранная клавиатура">
+						</button>
+					</div>
+					<button class="search__find-btn" type="submit">Найти</button>
 				</form>
 				<div class="search__miscellaneous">
 					<div class="search__sample">
@@ -154,7 +153,7 @@
 						<h2 class="widget__title title">
 							<a class="widget__link link" href="#">Погода</a>
 						</h2>
-						<div class="widget-value">
+						<div class="widget-value value-alignment">
 							<a class="widget-value__link link widget-value__link_weather_rain" href="#">+8 °C</a>
 						</div>
 					</div>
@@ -236,12 +235,12 @@
 					</div>
 				</article>
 
-				<article class="widget widget-main">
+				<article class=" widget widget-main">
 					<div class="widget__header">
 						<h2 class="widget__title title">
 							<a class="widget__link link" href="#">Телепрограмма</a>
 						</h2>
-						<div class="widget-value">
+						<div class="tv-stream widget-value">
 							<button class="tv-stream__btn" type="button">
 								ТВ онлайн
 								<span class="tv-stream__play-icon"></span>
@@ -251,33 +250,33 @@
 					<div class="widget__content">
 						<ul class="widget__list list">
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Крученый матч</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Крученый матч</a>
 							<a class="text-gray link link_grey" href="#">ТНТ</a>
 						</li>
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Сегодня</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Сегодня</a>
 							<a class="text-gray link link_grey" href="#">НТВ</a>
 						</li>
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Известия</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Известия</a>
 							<a class="text-gray link link_grey" href="#">Пятый канал</a>
 						</li>
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Время покажет</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Время покажет</a>
 							<a class="text-gray link link_grey" href="#">Первый</a>
 						</li>
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Отель "Элеон"</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Отель "Элеон"</a>
 							<a class="text-gray link link_grey" href="#">СТС</a>
 						</li>
 						<li class="widget__list-item">
-							<span class="widget__text_marg-r">1:30</span>
-							<a class="widget__text_marg-r widget__link link" href="#">Сашатаня</a>
+							<span class="widget__time">1:30</span>
+							<a class="widget__show-name widget__link link" href="#">Сашатаня</a>
 							<a class="text-gray link link_grey" href="#">ТНТ</a>
 						</li>
 					</ul>
@@ -294,23 +293,23 @@
 					<div class="widget__content">
 						<ul class="widget__list list">
 						<li class="widget__list-item">
-							<a href="#" class="widget__text_marg-r widget__link link">Крым</a>
+							<a href="#" class="widget__show-name widget__link link">Крым</a>
 							<span class="text-gray">драма</span>
 						</li>
 						<li class="widget__list-item">
-							<a href="#" class="widget__text_marg-r widget__link link">Бегущий по лезвию 2049</a>
+							<a href="#" class="widget__show-name widget__link link">Бегущий по лезвию 2049</a>
 							<span class="text-gray">фантастика</span>
 						</li>
 						<li class="widget__list-item">
-							<a href="#" class="widget__text_marg-r widget__link link">Салют-7</a>
+							<a href="#" class="widget__show-name widget__link link">Салют-7</a>
 							<span class="text-gray">драма</span>
 						</li>
 						<li class="widget__list-item">
-							<a href="#" class="widget__text_marg-r widget__link link">Гномы в доме</a>
+							<a href="#" class="widget__show-name widget__link link">Гномы в доме</a>
 							<span class="text-gray">мультфильм</span>
 						</li>
 						<li class="widget__list-item">
-							<a href="#" class="widget__text_marg-r widget__link link">Ночные игры</a>
+							<a href="#" class="widget__show-name widget__link link">Ночные игры</a>
 							<span class="text-gray">боевик</span>
 						</li>
 					</ul>
