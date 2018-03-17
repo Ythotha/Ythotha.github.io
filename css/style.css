@@ -143,12 +143,12 @@ body{
     margin-left: 20px;
 }
 
-.widget__img-box{
-    margin-bottom: 10px;
+.ad__header{
+    max-width: 170px;
 }
 
 .ad__title{
-    width: 170px;
+    margin-top: 10px;
 }
 
 /*----------ПОИСК----------*/
