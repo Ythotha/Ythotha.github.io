@@ -47,6 +47,7 @@ body{
     vertical-align: bottom;
     margin-right: 8px;
     color: #6da2e1;
+    font-size: 19px;
 }
 
 .widget__tab_active{
@@ -54,7 +55,8 @@ body{
 }
 
 .title{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
 }
 
