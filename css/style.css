@@ -37,57 +37,38 @@ body{
     margin-bottom: 10px;
 }
 
-.news__tabs{
+.widget__tabs{
     display: inline-block;
     vertical-align: bottom;
 }
 
-.news__tab{
+.widget__tab{
     display: inline-block;
     vertical-align: bottom;
     margin-right: 8px;
     color: #6da2e1;
 }
 
-.news__tab_active{
+.widget__tab_active{
     color: #0054b9;
 }
 
 .title{
     margin: 0;
     font-weight: 400;
-    font-size: 19px;
-}
-
-.news__tab-link{
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .text-gray{
     color: #999999;
 }
 
-.news__date{
+.widget__date{
     font-family:  Verdana,Arial,Helvetica,sans-serif;
     font-size: 12px;
     line-height: 1.36;
     color: #999;
     display: inline-block;
     vertical-align: bottom;
-}
-
-.news__time{
-    color: inherit;
-}
-
-.news__list-item{
-    margin-bottom: 9px;
-    line-height: 1.36;
-}
-
-.news__list-item:last-child{
-    margin-bottom: 0;
 }
 
 .list{
@@ -116,7 +97,7 @@ body{
 
 /*----------КОТИРОВКИ----------*/
 
-.news__courses{
+.widget__courses{
     margin-top: 8px;
 }
 
@@ -160,17 +141,12 @@ body{
     margin-left: 20px;
 }
 
-.ad__header{
-    width: 170px;
+.widget__img-box{
+    margin-bottom: 10px;
 }
 
 .ad__title{
-    margin-top: 10px;
-    color: #0054b9;
-}
-
-.ad__content{
-    margin-top: 10px;
+    width: 170px;
 }
 
 /*----------ПОИСК----------*/
@@ -179,6 +155,7 @@ body{
     position: relative;
     margin-top: 36px;
     padding-left: 20px;
+    width: 855px;
 }
 
 .logo{
@@ -197,13 +174,13 @@ body{
     clear: both;
 }
 
-.search-area__header-nav{
+.search-area__nav{
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
 }
 
-.search-area__header-nav:last-child{
+.search-area__nav:last-child{
     margin-right: 0;
 }
 
@@ -215,7 +192,6 @@ body{
 .search__input-box{
     position: relative;
     box-sizing: border-box;
-    width: 910px;
 }
 
 .search__input-box{
@@ -294,7 +270,6 @@ body{
 
 .search__miscellaneous{
     margin-top: 8px;
-    width: 910px;
     font-size: 14px;
     line-height: 1.3;
 }
@@ -302,22 +277,18 @@ body{
 .search__sample{
     display: inline-block;
     vertical-align: middle;
-    max-width: 470px;
+    max-width: 440px;
 }
 
 .input-samples__sample{
     color: #999;
 }
 
-.search__browser-ad{
+.search__ad{
     float: right;
-    margin-right: 83px;
+    margin-right: 36px;
     font-size: 15px;
     max-width: 350px;
-}
-
-.browser-ad__img{
-    width: 62px;
 }
 
 .browser-ad__link{
@@ -360,30 +331,35 @@ body{
 }
 
 .widget__header{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .widget__title{
     display: inline-block;
     vertical-align: top;
     color: #0054b9;
+    font-size: 19px;
 }
 
 .link_bold{
     font-weight: 700;
 }
 
-.widget-value{
+.widget__value{
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
-.value-alignment{
-    top: -4px;
+.weather__header{
+    margin-bottom: 0;
 }
 
-.widget-value__link{
+.weather__value{
+    top: -6px;
+}
+
+.weather__link{
     display: inline-block;
     vertical-align: middle;
     font-size: 19px;
@@ -391,17 +367,17 @@ body{
     padding-left: 38px;
 }
 
-.widget-value__link_weather_rain{
+.weather__link_weather_rain{
     background: url("../img/rain_cloud.svg") 0 50% no-repeat;
     background-size: contain;
 }
 
-.widget-value__link_weather_snow{
+.weather__link_weather_snow{
     background: url("../img/snow.svg") 0 50% no-repeat;
     background-size: contain;
 }
 
-.widget-value__link_weather_crescent{
+.weather__link_weather_crescent{
     background: url("../img/skc_n.svg") 0 50% no-repeat;
     background-size: contain;
 }
@@ -443,7 +419,6 @@ body{
 }
 
 .widget__list-item{
-    margin-right: 10px;
     margin-bottom: 9px;
     color: inherit;
 }
@@ -453,17 +428,21 @@ body{
     margin-right: 0;
 }
 
+.widget__list-item_inline{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.maps__list-item{
+    margin-right: 8px;
+}
+
 .widget__time{
     margin-right: 8px;
 }
 
 .widget__show-name{
     margin-right: 8px;
-}
-
-.list-inline{
-    display: inline-block;
-    vertical-align: top;
 }
 
 /*----------ФУТЕР----------*/
@@ -497,10 +476,6 @@ body{
     color: inherit;
 }
 
-.footer__column:first-child{
-    max-width: 283px;
-}
-
 .footer__column:last-child{
     margin-right: 0;
     position: absolute;
@@ -508,8 +483,27 @@ body{
     bottom: 0;
 }
 
+.media{
+    max-width: 283px;
+}
+
 .footer__navigation{
     color: inherit;
+}
+
+.footer__list{
+    color: inherit;
+    line-height: 1.36;
+}
+
+.footer__list-item{
+    margin-bottom: 9px;
+    color: inherit;
+}
+
+.footer__list-item:last-child{
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
 .footer__logo{
